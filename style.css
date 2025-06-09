@@ -4,13 +4,9 @@ body {
     background-color: #181c20;
     color: #FFFFFFDE;
     font-family: 'Alegreya Sans SC', sans-serif;
-}
-
-.disable-select {
     -webkit-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 #home {
@@ -34,11 +30,6 @@ body {
     width: auto;
     border-radius: 50%;
 }
-
-/* .text-home {
-    text-align: left;
-
-} */
 
 .text-home h1 {
     font-size: 2.5rem;
@@ -135,11 +126,6 @@ h4 {
     width: 40%;
 }
 
-
-#skills {
-    height: 50vh;
-}
-
 #skills h1 {
     text-align: center;
     font-size: 2.4rem;
@@ -173,6 +159,20 @@ h4 {
 .icons {
     height: 70px;
     width: 70px;
+}
+
+
+
+footer {
+    height: 50px;
+    justify-content: space-between;
+    color: #FFFFFFDE;
+    fill: #FFFFFFDE;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 10px;
 }
 
 /* Mobile Screen */
@@ -230,4 +230,42 @@ h4 {
         border-radius: 50%;
     }
 
+    #about {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .col-60 {
+        width: 100%;
+        padding-left: 25px;
+        padding-right: 25px;
+        padding-bottom: 20px;
+        text-align: justify;
+    }
+
+    .col-40 {
+        width: 0;
+    }
+
+    .col-60 h2 {
+        font-size: 2.3rem;
+    }
+
+    .grid {
+        margin: 0;
+    }
+
+    .container-skill {
+        height: 100px;
+        margin: 10px;
+        width: 100px;
+    }
+
+    .icons {
+        height: 48px;
+        width: 48px;
+    }
+    footer h5 {
+        font-size: .75rem;
+    }
 }

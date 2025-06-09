@@ -9,6 +9,10 @@ body {
     user-select: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #home {
     height: 94vh;
     display: flex;
@@ -91,6 +95,7 @@ h4 {
     margin: 0;
     opacity: 0.5;
     font-size: 1.1rem;
+    padding-top: 5px;
 }
 
 #about {
@@ -228,6 +233,7 @@ footer {
 
     .nav-menu {
         display: contents;
+        height: 100vh;
     }
 
     .nav-menu svg {
@@ -238,20 +244,55 @@ footer {
     }
 
     .nav-menu-top {
+        width: 97%;
         display: flex;
         justify-content: space-between;
-        padding: 5px 0 0 5px;
+        padding: 5px 0 0 10px;
         align-items: center;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        background-color: #181c20;
     }
 
     .nav-menu-top h3 {
         margin: 0;
     }
 
+    .nav-menu button {
+        all: unset;
+    }
+
+    .nav-menu-items {
+        height: inherit;
+        width: 100%;
+        background-color: #181c20;
+        position: fixed;
+        z-index: 1;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        top: 0;
+        left: 0;
+        flex-direction: column;
+    }
+
+    .nav-menu-items li {
+        list-style: none;
+        font-size: 2rem;
+        margin-bottom: 20px;
+    }
+
+    .nav-menu-items a {
+        text-decoration: none;
+        color: #FFFFFFDE;
+    }
+
     #home {
-        height: 93vh;
         display: flex;
         flex-direction: column;
+        padding-top: 30px;
     }
 
     .col-half {

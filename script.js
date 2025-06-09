@@ -43,10 +43,21 @@ function blinkCursor() {
         else
             typingText.innerHTML = currentWord + '|';
         count--;
-        setTimeout(blinkCursor, blinkSpeed)
+        setTimeout(blinkCursor, blinkSpeed);
     }
     else
         typeEffect();
 }
 
+function toggleMenu() {
+    const display = window.getComputedStyle(document.getElementById("menu")).display;
+    if (display == 'none') {
+        document.getElementById("menu").style.display = 'flex';
+        document.body.style.overflow = 'hidden';
+    }
+    else {
+        document.getElementById("menu").style.display = 'none';
+        document.body.style.overflow = 'unset';
+    }
+}
 window.onload = typeEffect;

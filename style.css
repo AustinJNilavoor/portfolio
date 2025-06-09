@@ -90,13 +90,17 @@ h4 {
     color: #FFFFFFDE;
     margin: 0;
     opacity: 0.5;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 #about {
-    /* height: 50vh; */
     display: flex;
     flex-direction: row;
+}
+
+.section-head {
+    text-align: center;
+    font-size: 2rem;
 }
 
 .clr-blue {
@@ -116,7 +120,7 @@ h4 {
     font-family: Poppins, sans-serif;
 }
 
-.col-60 h2 {
+.col-60 h1 {
     margin-bottom: 0;
     text-align: center;
     font-size: 2.5rem;
@@ -126,10 +130,10 @@ h4 {
     width: 40%;
 }
 
-#skills h1 {
+/* #skills h1 {
     text-align: center;
     font-size: 2.4rem;
-}
+} */
 
 .grid {
     display: flex;
@@ -161,7 +165,47 @@ h4 {
     width: 70px;
 }
 
+#contact h1 {
+    margin-bottom: 15px;
+}
 
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.contact-form label {
+    color: #FFFFFFDE;
+    text-align: left;
+    display: block;
+}
+
+.contact-form input,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 3px solid rgb(54, 53, 53);
+    box-sizing: border-box;
+    display: block;
+    border-radius: 7px;
+    font-size: 1rem;
+    resize: none
+}
+
+.contact-form button {
+    background: rgb(54, 53, 53);
+    color: #c2c2c2;
+    border: 0;
+    padding: 8px 90px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
 footer {
     height: 50px;
@@ -265,6 +309,7 @@ footer {
         height: 48px;
         width: 48px;
     }
+
     footer h5 {
         font-size: .75rem;
     }

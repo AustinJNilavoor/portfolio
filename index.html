@@ -21,7 +21,7 @@
                         <h4><a href="#about">About</a></h4>
                     </li>
                     <li>
-                        <h4><a href="#home">Projects</a></h4>
+                        <h4><a href="#projects">Projects</a></h4>
                     </li>
                     <li>
                         <h4><a href="#contact">Contact</a></h4>
@@ -40,7 +40,7 @@
                 <div class="nav-menu-items" id="menu">
                     <li><a href="#home" onclick="toggleMenu()">Home</a></li>
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                    <li><a href="#home" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                 </div>
             </div>
@@ -94,8 +94,7 @@
         </div>
         <div class="col-40">
             <div class="col-half center">
-                <img class='profile-pic ' src="assets/austin.jpg" style="border-radius: 10%;"
-                    alt="image" />
+                <img class='profile-pic ' src="assets/austin.jpg" style="border-radius: 10%;" alt="image" />
             </div>
         </div>
     </section>
@@ -157,7 +156,38 @@
             </div>
         </div>
     </section>
-
+    <section id="projects">
+        <h1 class="section-head">Projects</h1>
+        <div class="projects">
+            <div class="container-project">
+                <img class="project-icon" src="assets/projects/zed.jpg" alt="" />
+                <h4>CGRA Overlay design for FPGA</h4>
+                <p>A CGRA (Coarse-Grained Reconfigurable Array) overlay for FPGA creates a specialized, higher-level
+                    computing fabric on top of an FPGA. It's essentially an array of interconnected processing elements
+                    designed to accelerate specific tasks like DSP or AI, offering better performance and efficiency
+                    than traditional FPGA programming while retaining reconfigurability.</p>
+            </div>
+            <div class="container-project">
+                <img class="project-icon" src="assets/projects/wallet.jpg" alt="" />
+                <h4>Wallet App</h4>
+                <p>Wallet is a money management app built with Flutter, designed to help users track their transactions
+                    efficiently.</p>
+            </div>
+            <div class="container-project">
+                <img class="project-icon" src="assets/projects/6134.jpg" alt="" />
+                <h4>PiDrone App</h4>
+                <p>PiDrone is a versatile Flutter application designed for seamless control of drones. This app provides
+                    an intuitive interface for managing and navigating drones with ease.</p>
+            </div>
+            <div class="container-project">
+                <img class="project-icon" src="assets/projects/drone_1.jpg" alt="" />
+                <h4>Quadcopter</h4>
+                <p>KK2.1.5 flight controller, A2212 brushless motors. KK2.1.5: user-friendly, on-board config,
+                    stabilizes flight. A2212 motors: powerful propulsion, efficient, reliable. Ideal for DIY, beginner
+                    drone builds; hands-on assembly and basic flight tuning.</p>
+            </div>
+        </div>
+    </section>
     <section id="contact">
         <h1 class="section-head">Contact <span class="clr-blue">Me</span></h1>
         <div class="contact-form">

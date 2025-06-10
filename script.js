@@ -6,6 +6,9 @@ const typingSpeed = 140;
 const removingSpeed = 40;
 const blinkSpeed = 500;
 let count = 6;
+const airtableApiKey = "pat5WDR2xGYF4MewP.c7c7de6ce95350356d859b16cdfc3c6448dd39b45e78fc28886377f61fb69709";
+const baseId = "appLepBpYJJPbPn2f";
+const tableName = "Data";
 
 const typingText = document.getElementById("typing-text");
 
@@ -60,4 +63,31 @@ function toggleMenu() {
         document.body.style.overflow = 'unset';
     }
 }
+
+document.getElementById("contactForm").addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const Name = this.name.value;
+    const email = this.email.value;
+    const message = this.message.value;;
+    const data = { Name, email, message };
+    fetch(`https://api.airtable.com/v0/${baseId}/${tableName}`, {
+        method: "POST",
+        headers: {
+            "Authorization": `Bearer ${airtableApiKey}`,
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            records: [
+                {
+                    fields: data
+                }
+            ]
+        })
+    })
+        .then(res => res.json())
+
+document.getElementById("contactForm").reset();
+})
+
 window.onload = typeEffect;

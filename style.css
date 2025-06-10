@@ -14,7 +14,7 @@ html {
 }
 
 #home {
-    height: 94vh;
+    height: 100vh;
     display: flex;
 }
 
@@ -49,7 +49,9 @@ html {
     padding-top: 20px;
 }
 
-.socials a {
+.socials a,
+.nav-bar a {
+    color: #FFFFFFDE;
     text-decoration: none;
 }
 
@@ -133,6 +135,8 @@ h4 {
 
 .col-40 {
     width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 /* #skills h1 {
@@ -329,7 +333,8 @@ footer {
     }
 
     .col-40 {
-        width: 0;
+        display: none;
+
     }
 
     .col-60 h2 {
